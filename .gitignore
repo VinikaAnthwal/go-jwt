@@ -4,4 +4,3 @@ docker-compose*
 .vscode
 forum # Dont push the local binary
 .DS_Store
-.exe

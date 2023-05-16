@@ -10,10 +10,10 @@ import (
 // JwtWrapper wraps the signing key and the issuer
 // JwtWrapper is a struct that holds the secret key, issuer and expiration time for a JWT token
 type JwtWrapper struct {
- SecretKey       string // key used for signing the JWT token
- Issuer          string // Issuer of the JWT token
- ExpirationMinutes int64 // Number of minutes the JWT token will be valid for
- ExpirationHours int64 // Expiration time of the JWT token in hours
+ SecretKey       string // SecretKey is the secret key used for signing the JWT token
+ Issuer          string // Issuer is the issuer of the JWT token
+ ExpirationMinutes int64 // ExpirationMinutes is the number of minutes the JWT token will be valid for
+ ExpirationHours int64 // ExpirationHours is the expiration time of the JWT token in hours
 }
 
 // JwtClaim adds email as a claim to the token
